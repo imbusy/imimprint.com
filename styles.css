@@ -71,15 +71,43 @@ a {
 /* --------------------------------------------------------------------------
    Brand Typography
    -------------------------------------------------------------------------- */
-.brand-im {
-    font-family: var(--font-display);
-    font-weight: 400;
-    font-style: italic;
+/* --------------------------------------------------------------------------
+   Logo Styles
+   -------------------------------------------------------------------------- */
+.navbar-logo {
+    height: 40px;
+    width: auto;
 }
 
-.brand-imprint {
-    font-family: var(--font-display);
-    font-weight: 700;
+.hero-logo {
+    max-width: 100%;
+    height: auto;
+    max-height: 180px;
+}
+
+.footer-logo {
+    height: 32px;
+    width: auto;
+}
+
+@media (max-width: 991.98px) {
+    .hero-logo {
+        max-height: 120px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .navbar-logo {
+        height: 32px;
+    }
+    
+    .hero-logo {
+        max-height: 90px;
+    }
+    
+    .footer-logo {
+        height: 28px;
+    }
 }
 
 /* --------------------------------------------------------------------------
@@ -99,12 +127,12 @@ a {
 }
 
 .navbar-brand {
-    font-size: 1.75rem;
-    color: var(--color-secondary-bg) !important;
+    display: flex;
+    align-items: center;
 }
 
-.navbar-brand:hover {
-    color: var(--color-dark-accent) !important;
+.navbar-brand:hover .navbar-logo {
+    opacity: 0.8;
 }
 
 .nav-link {
@@ -214,8 +242,6 @@ a {
 }
 
 .hero-title {
-    font-size: clamp(3rem, 8vw, 6rem);
-    color: var(--color-secondary-bg);
     margin-bottom: 1.5rem;
     line-height: 1;
 }
@@ -750,12 +776,12 @@ a {
 }
 
 .footer-brand {
-    font-size: 1.5rem;
-    color: var(--color-secondary-bg);
+    display: inline-flex;
+    align-items: center;
 }
 
-.footer-brand:hover {
-    color: var(--color-dark-accent);
+.footer-brand:hover .footer-logo {
+    opacity: 0.8;
 }
 
 .footer-tagline {
