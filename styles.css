@@ -196,6 +196,9 @@ a {
 }
 
 .btn-outline-dark {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     border-radius: 50px;
     border-width: 2px;
     font-weight: 500;
