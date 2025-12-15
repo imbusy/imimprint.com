@@ -20,7 +20,7 @@
     --color-dark-accent-light: #525940;
     
     /* Typography */
-    --font-display: 'Cormorant Garamond', Georgia, serif;
+    --font-display: 'Plus Jakarta Sans', system-ui, sans-serif;
     --font-body: 'Outfit', system-ui, sans-serif;
     
     /* Spacing */
