@@ -82,7 +82,7 @@ a {
 .hero-logo {
     max-width: 100%;
     height: auto;
-    max-height: 180px;
+    max-height: 512px;
 }
 
 .footer-logo {
@@ -92,7 +92,7 @@ a {
 
 @media (max-width: 991.98px) {
     .hero-logo {
-        max-height: 120px;
+        max-height: 256px;
     }
 }
 
@@ -102,7 +102,7 @@ a {
     }
     
     .hero-logo {
-        max-height: 90px;
+        max-height: 256px;
     }
     
     .footer-logo {
@@ -229,16 +229,6 @@ a {
 
 .hero-content {
     padding: 2rem 0;
-}
-
-.hero-tagline {
-    font-family: var(--font-body);
-    font-weight: 500;
-    font-size: 0.875rem;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    color: var(--color-secondary-bg);
-    margin-bottom: 1rem;
 }
 
 .hero-title {
